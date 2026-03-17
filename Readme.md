@@ -2,7 +2,7 @@
 
 * Студент: [Элеонора Журавлёва](https://up.htmlacademy.ru/htmlcss-individual/2/user/2676423).
 * Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
-
+* Сайт [Мой проект Седона](https://eleonorazhuravlyova.github.io/2676423-sedona-2/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
