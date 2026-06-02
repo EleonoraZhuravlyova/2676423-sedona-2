@@ -125,7 +125,8 @@
           <h2 class="sub-title">Подпишитесь на рассылку</h2>
           <p class="sub-text">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
           <form class="sub-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="input-email-index" type="email" name="email" placeholder="Ваш e-mail" required>
+            <label class="visually-hidden" for="email">Ваш email</label>
+            <input class="input-email-index" type="email" id="email" name="email" placeholder="Ваш e-mail" required>
             <button class="button-sub" type="submit">Подписаться</button>
           </form>
         </section>
@@ -245,8 +246,10 @@
               <label class="label-title age-label" for="adult">Взрослые: </label>
               <div class="button-number">
                 <button class="button-sign" type="button">-</button>
+                <span class="visually-hidden">Кнопка меньше</span>
                 <input class="number-input" type="number" name="adult" id="adult" value="2">
                 <button class="button-sign" type="button">+</button>
+                <span class="visually-hidden">Кнопка больше</span>
               </div>
             </li>
             <li class="age-item">
@@ -267,8 +270,10 @@
               </div>
               <div class="button-number">
                 <button class="button-sign" type="button">-</button>
+                <span class="visually-hidden">Кнопка меньше</span>
                 <input class="number-input" type="number" name="kid" id="kid" value="2">
                 <button class="button-sign" type="button">+</button>
+                <span class="visually-hidden">Кнопка больше</span>
               </div>
             </li>
           </ul>
