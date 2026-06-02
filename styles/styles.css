@@ -88,6 +88,19 @@ body {
   text-align: center;
 }
 
+.nav-link:hover {
+  color: #756157;
+}
+
+.nav-link:focus {
+  color: #756157;
+  outline: none;
+}
+
+.nav-link:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .activ-page-home {
   position: relative;
 }
@@ -196,7 +209,18 @@ body {
   font-weight: 700;
   border: none;
   border-radius: 4px;
+}
 
+.button-wish:hover {
+  background-color: #615048;
+}
+
+.button-wish:focus {
+  background-color: #615048;
+}
+
+.button-wish:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .main {
@@ -337,7 +361,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
- text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .invite-text {
@@ -352,6 +376,7 @@ body {
 
 .adviсe-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   list-style: none;
@@ -455,6 +480,22 @@ body {
   margin: 0 auto;
 }
 
+.sub-hotel-search:hover {
+  background-color: #615048;
+}
+
+.sub-hotel-search:focus {
+  background-color: #615048;
+}
+
+.sub-hotel-search:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.sub-hotel-search:disabled {
+  background-color: #e5e5e5;
+}
+
 .sub-index {
   background-color: #334d57;
   background-image: url("../images/subscribe-background.jpg");
@@ -511,6 +552,15 @@ body {
   font-weight: 400;
 }
 
+.input-email-index:hover {
+  background-color: #e5e5e5;
+}
+
+.input-email-index:focus {
+  background-color: #e5e5e5;
+  border: 2px solid #83b3d3;
+}
+
 .input-email {
   background-color: #f2f2f2;
   border: none;
@@ -521,6 +571,15 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
+}
+
+.input-email:hover {
+  background-color: #e5e5e5;
+}
+
+.input-email:focus {
+  background-color: #e5e5e5;
+  border: 2px solid #83b3d3;
 }
 
 .button-sub {
@@ -537,6 +596,22 @@ body {
   line-height: 36px;
   font-weight: 400;
   width: 240px;
+}
+
+.button-sub:hover {
+  background-color: #68a2ca;
+}
+
+.button-sub:focus {
+  background-color: #68a2ca;
+}
+
+.button-sub:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-sub:disabled {
+  background-color: #e5e5e5;
 }
 
 .page-footer {
@@ -591,7 +666,7 @@ body {
   color: rgba(104, 163, 202, 0.3);
 }
 
-.number .number:hover {
+.number:hover {
   color: #756157;
 }
 
@@ -634,8 +709,8 @@ body {
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
-  padding: 5px 195px;
-  min-width: 331px;
+  padding: 5px 186px;
+  min-width: 348px;
 }
 
 .creator {
@@ -673,6 +748,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   list-style: none;
   font-size: 16px;
@@ -683,7 +759,6 @@ body {
   height: 21px;
   gap: 24px;
 }
-
 
 .breadcrumbs-item:not(:first-child) {
   list-style-image: url("../images/icons/breadcrumbs-marker.svg");
@@ -699,7 +774,7 @@ body {
   background-size: cover;
   width: 12px;
   height: 13px;
-  padding: 7px;
+
 }
 
 .breadcrumbs-link:hover {
@@ -914,6 +989,10 @@ checkbox::after:active {
   margin: 0;
 }
 
+/* range-input[type="number"] {
+  -moz-appearance: textfield;
+} */
+
 .range-box {
   padding-top: 44px;
 }
@@ -939,6 +1018,18 @@ checkbox::after:active {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.range-toggle:hover {
+  background-color: #e5e5e5;
+}
+
+.range-toggle:focus {
+  border: 3px solid #83b3d3;
+}
+
+.range-toggle:active {
+  border: 3px solid #83b3d3;
 }
 
 .toggle-min {
@@ -1544,7 +1635,6 @@ checkbox::after:active {
 .button-sign:focus {
   color: #000000;
   border: 2px solid #82b3d3;
-
 }
 
 .number-input {
@@ -1556,8 +1646,14 @@ checkbox::after:active {
   line-height: 24px;
   background-color: #f2f2f2;
   border: none;
-  padding: 0;
+  padding: 10px;
   box-sizing: border-box;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .number-input::placeholder {
@@ -1629,11 +1725,11 @@ checkbox::after:active {
   left: 115px;
 }
 
-.popover:hover .popover-content {
+.popover:hover.popover-content {
   display: block;
 }
 
-.popover:focus-within .popover-content {
+.popover:focus-within.popover-content {
   display: block;
 }
 
@@ -1652,6 +1748,14 @@ checkbox::after:active {
   padding: 18px 77px;
   box-sizing: border-box;
   border: none;
+}
+
+.search-modal:hover {
+  background-color: #68a2ca;
+}
+
+.search-modal:focus {
+  background-color: #68a2ca;
 }
 
 .search-modal:active {
